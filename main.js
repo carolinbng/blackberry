@@ -69,7 +69,19 @@ function scrollTop(){
    
 window.addEventListener('scroll', scrollTop)
    
+/*================ SCROLL REVEAL ANIMATION ====================*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+})
 
-
-
-/*================ DARK LIGHT THEME =======================*/
+sr.reveal(`.home_data, .home_img, 
+.about_data, .about_img, 
+.services_content, .menu_content
+.app_data, .app_img,
+.contact_data, .contact_button
+.footer_content`, {
+    interval: 150
+})
