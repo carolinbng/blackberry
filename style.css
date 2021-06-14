@@ -277,18 +277,135 @@ img{
 
 
 /*============= ABOUT ===============*/
+.about_data{
+    text-align: center;
+}
 
+.about_description{
+    margin-bottom: var(--mb-3);
+}
+
+.about_img{
+    width: 280px;
+    border-radius: .5rem;
+    justify-self: center;
+}
 
 /*================ SERVICES ===============*/
+.services_container{
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
 
+.services_content{
+    text-align: center;
+}
+
+.services_img{
+    width: 64px;
+    height: 64px;
+    fill: var(--first-color);
+    margin-bottom: var(--mb-2);
+}
+
+.services_title{
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+.services_description{
+    padding: 0 1.5rem;
+}
 
 
 /*=============== MENU ==================*/
+.menu_container{
+    grid-template-columns: repeat(2 ,1fr);
+    justify-content: center;
+}
 
+.menu_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-color);
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(3,74,40,.15);
+    padding: .75rem;
+}
+
+.menu_img{
+    width: 100px;
+    align-self: center;
+    margin-bottom: var(--mb-2);
+}
+
+.menu_name, .menu_preci{
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.menu_name{
+    font-size: var(--normal-font-size);
+}
+
+.menu_detail, .menu_preci{
+    font-size: var(--small-font-size);
+}
+
+.menu_detail{
+    margin-bottom: var(--mb-1);
+}
+
+.menu_button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: .625rem .813rem;
+    border-radius: .5rem 0 .5rem 0;
+}
 
 
 /*============== APP ===================*/
+.app_data{
+    text-align: center;
+}
 
+.app_description{
+    margin-bottom: var(--mb-5);
+}
+
+.app_stores{
+    margin-bottom: var(--mb-4);
+}
+
+.app_store{
+    width: 120px;
+    margin: 0 var(--mb-1);
+}
+
+.app_img{
+    width: 230px;
+    justify-self: center;
+}
 
 
 /*========== CONTACT =============*/
+.contact_container{
+    text-align: center;
+}
+
+.contact_description{
+    margin-bottom: var(--mb-3);
+}
+
+
+
+
+/*=========== FOOTER ===============*/
+
+
+
+/*========== MEDIA QUERIES ============*/
