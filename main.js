@@ -1,28 +1,26 @@
-/*================ SHOW MENU =================*/
-const showMenu = (toggleId, navId) =>{
+/*================ SHOW PRODUCTS =================*/
+const showProducts = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
 //Validate that variables exist
     if(toggle && nav){
-        //We add the show-menu class to the div tag with the nav_menu class
         toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show-menu')
+            nav.classList.toggle('show-products')
         })
     }
 }
-showMenu('nav-toggle','nav-menu')
+showProducts('nav-toggle','nav-menu')
     
 
     
 
 
-/*================== REMOVE MENU MOBILE ======================*/
+/*================== REMOVE PRODUCTS MOBILE ======================*/
 const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    //When we click on each nav_link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+    navMenu.classList.remove('show-products')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
@@ -54,7 +52,6 @@ window.addEventListener('scroll', scrollActive)
 /*================CHANGE BACKGROUND HEADER =======================*/
 function scrollHeader(){
     const nav = document.getElementById('header')
-     //When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
      if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
    
@@ -63,7 +60,6 @@ window.addEventListener('scroll', scrollHeader)
 /*================== SHOW SCROLL TOP ===========================*/
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top')
-     //When the scroll is higher than 560 viewport height, add the show-scroll class
      if(this.scrollY >= 560) scrollTop.classList.add('scroll-top'); else scrollTop.classList.remove('scroll-top')
 }
    
@@ -79,8 +75,8 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home_data, .home_img, 
 .about_data, .about_img, 
-.services_content, .menu_content
-.app_data, .app_img,
+.services_content, .products_content
+.brand_data, .brand_img,
 .contact_data, .contact_button
 .footer_content`, {
     interval: 150

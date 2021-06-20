@@ -192,12 +192,12 @@ img{
 }
 
 
-/* show menu */
-.show-menu{
+/* show products */
+.show-products{
     top: var(--header-height);
 }
 
-/* acitve menu */
+/* acitve products */
 .active-link{
     color: var(--first-color);
 }
@@ -324,13 +324,13 @@ img{
 }
 
 
-/*=============== MENU ==================*/
-.menu_container{
+/*=============== PRODUCTS ==================*/
+.products_container{
     grid-template-columns: repeat(2 ,1fr);
     justify-content: center;
 }
 
-.menu_content{
+.products_content{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -340,30 +340,30 @@ img{
     padding: .75rem;
 }
 
-.menu_img{
+.products_img{
     /*width: 100px;*/
     align-self: center;
     margin-bottom: var(--mb-2);
 }
 
-.menu_name, .menu_preci{
+.products_name, .products_preci{
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
 }
 
-.menu_name{
+.products_name{
     font-size: var(--normal-font-size);
 }
 
-.menu_detail, .menu_preci{
+.products_detail, .products_preci{
     font-size: var(--small-font-size);
 }
 
-.menu_detail{
+.products_detail{
     margin-bottom: var(--mb-1);
 }
 
-.menu_button{
+.products_button{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -373,26 +373,26 @@ img{
 }
 
 
-/*============== APP ===================*/
-.app_data{
+/*============== BRAND ===================*/
+.brand_data{
     text-align: center;
 }
 
-.app_description{
+.brand_description{
     margin-bottom: var(--mb-5);
 }
 
-.app_stores{
+.brand_stores{
     margin-bottom: var(--mb-4);
 }
 
-.app_store{
+.brand_store{
     /*width: 120px;*/
     width: 70px;
     margin: 0 var(--mb-1);
 }
 
-.app_img{
+.brand_img{
     width: 230px;
     justify-self: center;
 }
@@ -464,19 +464,19 @@ img{
 @media screen and (min-width: 576px){
     .home_container,
     .about_container,
-    .app_container
+    .brand_container
     {
         grid-template-columns: repeat(2,1fr);
         align-items: center;
     }
 
     .about_data, .about_initial,
-    .app_data, .app_initial,
+    .brand_data, .brand_initial,
     .contact_container, .contact_initial{
         text-align: initial;
     }
 
-    .about_img, .app_img{
+    .about_img, .brand_img{
         width: 380px;
         order: -1;
     }
@@ -523,25 +523,25 @@ img{
     }
 
     .services_container, 
-    .menu_container{
+    .products_container{
         margin-top: var(--mb-6);
     }
 
-    .menu_container{
+    .products_container{
         grid-template-columns: repeat(3, 210px);
         column-gap: 4rem;
     }
 
-    .menu_content{
+    .products_content{
         padding: 1.5rem;
     }
 
-    .menu_img{
+    .products_img{
        /* width: 130px;*/
        width: 200px;
     }
 
-    .app_store{
+    .brand_store{
         margin: 0 var(--mb-1) 0 0;
     }
 
@@ -558,7 +558,7 @@ img{
     }
 
     .about_container,
-    .app_container{
+    .brand_container{
         column-gap: 7rem;
     }
 
