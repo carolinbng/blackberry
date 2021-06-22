@@ -1,8 +1,8 @@
-/*================ SHOW PRODUCTS =================*/
+
 const showProducts = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
-//Validate that variables exist
+
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
             nav.classList.toggle('show-products')
@@ -15,7 +15,7 @@ showProducts('nav-toggle','nav-menu')
     
 
 
-/*================== REMOVE PRODUCTS MOBILE ======================*/
+
 const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction(){
@@ -28,7 +28,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
     
 
 
-/*================ SCROLL SECTIONS ACTIVE LINK ======================*/
+
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -49,7 +49,7 @@ function scrollActive(){
 
 window.addEventListener('scroll', scrollActive)
 
-/*================CHANGE BACKGROUND HEADER =======================*/
+/*================Hintergrund ändern Header=======================*/
 function scrollHeader(){
     const nav = document.getElementById('header')
      if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
@@ -57,7 +57,10 @@ function scrollHeader(){
    
 window.addEventListener('scroll', scrollHeader)
 
-/*================== SHOW SCROLL TOP ===========================*/
+
+
+
+
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top')
      if(this.scrollY >= 560) scrollTop.classList.add('scroll-top'); else scrollTop.classList.remove('scroll-top')
@@ -65,7 +68,10 @@ function scrollTop(){
    
 window.addEventListener('scroll', scrollTop)
    
-/*================ SCROLL REVEAL ANIMATION ====================*/
+
+
+
+/*================ Scroll Animation ====================*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
